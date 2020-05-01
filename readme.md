@@ -1,1 +1,2 @@
-stub
+https://github.com/PaperMC/Paper
+
