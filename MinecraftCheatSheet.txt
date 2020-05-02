@@ -41,6 +41,9 @@ Make user to superuser:
 /time set day
 /time set night
 
+/plugins
+/pl 
+
 == Dev Plugin  se
 
 === UUID Finder
