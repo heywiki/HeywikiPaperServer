@@ -10,6 +10,13 @@ docker rm <container-id>
 docker images
 docker rmi <image-id>
 
+docker login
+docker push heywiki2/papermc:latest
+docker pull heywiki2/papermc:latest
+
+docker volume create <volume-name>
+docker volume inspect <volume-name>
+
 https://www.spigotmc.org/wiki/start-up-parameters/
 
 
