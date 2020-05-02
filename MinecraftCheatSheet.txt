@@ -43,6 +43,14 @@ Make user to superuser:
 
 /plugins
 
+
+== server.properties
+
+https://minecraft.gamepedia.com/Server.properties
+
+gamemode=surviva|creative|adventure
+difficulty=peaceful|easy|normal|hard
+
 == Dev Plugin  se
 
 === UUID Finder
@@ -50,7 +58,6 @@ https://dev.bukkit.org/projects/uuid-finder
 UUIDFinder.jar
 
 /uuidfinder:uuidfinder gabrilux
-
 
 == Mods
 
