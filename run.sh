@@ -1,1 +1,4 @@
-docker run -d -p 25565:25565 heywiki2/papermc:latest
+docker run -d \
+-p 25565:25565 \
+-v /home/tester/minecraft/data:/data \
+heywiki2/papermc:latest
