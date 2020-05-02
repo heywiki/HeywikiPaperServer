@@ -20,7 +20,7 @@ docker volume inspect mumble-data -> shows real dir to config
 
 /home/wiki/minecraft/ops.json
 
-Make user to superuser: 
+Make user to superuser:
 
 [
   {
@@ -42,13 +42,12 @@ Make user to superuser:
 /time set night
 
 /plugins
-/pl 
 
 == Dev Plugin  se
 
 === UUID Finder
 https://dev.bukkit.org/projects/uuid-finder
-UUIDFinder.jar 
+UUIDFinder.jar
 
 /uuidfinder:uuidfinder gabrilux
 
@@ -75,8 +74,8 @@ https://github.com/TeNNoX-Mods/
 
 ServerSide: https://github.com/dmulloy2/AutoCraft/tree/master/src/main/java/net/dmulloy2/autocraft/types
 
-"Currently, as of 2020, the modding community is split up between Forge and Fabric. Server modding 
-is split up between CraftBukkit, Spigot, PaperMC and Sponge. Server linking software is split between 
+"Currently, as of 2020, the modding community is split up between Forge and Fabric. Server modding
+is split up between CraftBukkit, Spigot, PaperMC and Sponge. Server linking software is split between
 BungeeCord and Waterfall.[citation needed]
 
 === Spigot Plugins
