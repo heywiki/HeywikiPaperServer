@@ -12,9 +12,11 @@ if [ $# -eq 0 ]; then
   echo "Please indicate a docker dev step (build|run|cleanup|exec|logs)"
 fi
 
-image=heywiki2/papermc:latest
+imageName=heywiki2/papermc
+imageVersion=latest
 container=papermc-server
 data=/home/tester/minecraft/data
+image=$imageName:$imageVersion
 
 if [ "$1" == "build" ]; then
     docker build -t $image .
@@ -36,6 +38,18 @@ elif [ "$1" == "exec" ]; then
 
 elif [ "$1" == "logs" ]; then
     docker logs -f $container
+
+elif [ "$1" == "push" ]; then
+
+    tag="$imageName:latest"
+    if [ -z "$2" ]; then
+        echo "para 2 not set: set version to latest"
+    else
+        tag="$imageName:$2"
+    fi
+
+    echo "docker push $tag"
+    docker push $tag
 
 else
    echo "unknown command $1"
