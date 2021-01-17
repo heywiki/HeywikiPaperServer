@@ -32,7 +32,7 @@ to use from
 
 https://papermc.io/downloads
 
-to the /setup dir. Move the older jar to /etc/attic.
+and copy it to the /setup dir. Move the older jar to /etc/attic.
 
 Then change the line in the server-run.sh to the file you just downloaded,
 e.g.
@@ -40,3 +40,11 @@ e.g.
 ----
 /opt/minecraft/paper-1.16.5-428.jar nogui \
 ----
+
+With the following command you can build the container image
+
+----
+bash dodev.sh build
+----
+
+For more commands see dodev.sh
