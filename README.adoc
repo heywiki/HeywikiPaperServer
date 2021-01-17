@@ -1,0 +1,42 @@
+== Running
+
+This is a minecraft paper mc docker container
+
+https://github.com/PaperMC/Paper
+
+It copies some default plugins (Mods) and a default server.properties
+and ops.json (and other default files) to the data dir before
+the server gets started (therefore this container actually defines
+the default files, not paper default expansion)
+
+Create a docker volume first
+
+----
+docker volume create --name papermc-data
+----
+
+Run with
+
+----
+docker run -d \
+-p 25565:25565 \
+--name papermc-server \
+-v papermc-data:/data \
+heywiki2/papermc:latest
+----
+
+== Updating Server Version
+
+To update the paper server, download the version of the jar you would like
+to use from 
+
+https://papermc.io/downloads
+
+to the /setup dir. Move the older jar to /etc/attic.
+
+Then change the line in the server-run.sh to the file you just downloaded,
+e.g.
+
+----
+/opt/minecraft/paper-1.16.5-428.jar nogui \
+----
