@@ -1,11 +1,11 @@
-FROM adoptopenjdk:11-jre-hotspot
+FROM eclipse-temurin:19-jre 
 MAINTAINER heywiki
 
-RUN apt-get -y update
+#RUN apt-get -y update
 #RUN apt-get -y install dos2unix
 #RUN apt-get -y install zip
-RUN apt-get -y install vim
-RUN apt-get -y install iputils-ping
+#RUN apt-get -y install vim
+#RUN apt-get -y install iputils-ping
 
 #copy all files from setup to container
 ADD setup /opt/minecraft
