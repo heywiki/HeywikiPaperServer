@@ -82,9 +82,9 @@ https://minecraft.gamepedia.com/Server.properties
 * http://tennoxmods.blogspot.com/p/download.html    -> download
 
 
-http://files.minecraftforge.net/   -> mincraft forge required
+* http://files.minecraftforge.net/   -> mincraft forge required
 
-https://github.com/TeNNoX-Mods/
+* https://github.com/TeNNoX-Mods/
 
 (unfortunately no source code!) -> use https://github.com/PowerCraft
 
@@ -100,5 +100,5 @@ BungeeCord and Waterfall.[citation needed]
 
 === Spigot Plugins
 
-https://www.youtube.com/watch?v=v4zbqtpLaS4&list=PLfu_Bpi_zcDNEKmR82hnbv9UxQ16nUBF7
-https://github.com/AlvinVrolijk/ConveyorBelt
+* https://www.youtube.com/watch?v=v4zbqtpLaS4&list=PLfu_Bpi_zcDNEKmR82hnbv9UxQ16nUBF7
+* https://github.com/AlvinVrolijk/ConveyorBelt
