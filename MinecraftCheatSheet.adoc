@@ -1,22 +1,28 @@
 == Tools
 
-https://getbukkit.org/download/spigot                    -> Downlod Spigot Server
-https://papermc.io/downloads                             -> Paper MC Server
-https://www.spigotmc.org/resources/categories/spigot.4/  -> Plugins
+* https://getbukkit.org/download/spigot                    -> Downlod Spigot Server
+* https://papermc.io/downloads                             -> Paper MC Server
+* https://www.spigotmc.org/resources/categories/spigot.4/  -> Plugins
 
 
 == Mumble
 
-https://www.mumble.info/                                  -> teamspeak
-https://registry.hub.docker.com/r/phlak/mumble            -> docker server img
+* https://www.mumble.info/                                  -> teamspeak
+* https://registry.hub.docker.com/r/phlak/mumble            -> docker server img
 
 see $WIDO_HOME/bin/other/mumble-run.sh
+
+----
 docker start mumble-server
 docker stop mumble-server
+----
 
 Edit Config (serverpassword):
+
+----
 docker exec -it mumble-server vi /etc/mumble/config.ini
 docker volume inspect mumble-data -> shows real dir to config
+----
 
 == Spigot Config:
 
@@ -24,6 +30,7 @@ docker volume inspect mumble-data -> shows real dir to config
 
 Make user to superuser:
 
+----
 [
   {
     "uuid": "fa9efe65-5152-440b-a7df-33fc309f617e",
@@ -32,11 +39,13 @@ Make user to superuser:
     "bypassesPlayerLimit": false
   }
 ]
+----
 
 (you can see uuid on the server console when server starts up)
 
 == Superuser Commands
 
+----
 /weather rain
 /weahter clear
 
@@ -44,32 +53,33 @@ Make user to superuser:
 /time set night
 
 /plugins
-
+----
 
 == server.properties
 
 https://minecraft.gamepedia.com/Server.properties
 
-gamemode=surviva|creative|adventure
-difficulty=peaceful|easy|normal|hard
+* gamemode=surviva|creative|adventure
+* difficulty=peaceful|easy|normal|hard
 
 == Dev Plugin  se
 
 === UUID Finder
-https://dev.bukkit.org/projects/uuid-finder
-UUIDFinder.jar
+
+* https://dev.bukkit.org/projects/uuid-finder
+* UUIDFinder.jar
 
 /uuidfinder:uuidfinder gabrilux
 
 == Mods
 
-https://www.youtube.com/watch?v=fNdET-oDD2k
-https://www.youtube.com/watch?v=p5Gt1B4Pctk     -> ASSEMBLY MOD!
+* https://www.youtube.com/watch?v=fNdET-oDD2k
+* https://www.youtube.com/watch?v=p5Gt1B4Pctk     -> ASSEMBLY MOD!
 
 === Assembly Mod
 
-https://lekoopa.de.tl/Assembly-Mod.htm
-http://tennoxmods.blogspot.com/p/download.html    -> download
+* https://lekoopa.de.tl/Assembly-Mod.htm
+* http://tennoxmods.blogspot.com/p/download.html    -> download
 
 
 http://files.minecraftforge.net/   -> mincraft forge required
