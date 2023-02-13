@@ -1,4 +1,5 @@
-FROM eclipse-temurin:19-jre 
+#FROM eclipse-temurin:19-jre-alpine 
+FROM eclipse-temurin:19-jre-focal
 MAINTAINER heywiki
 
 #RUN apt-get -y update
